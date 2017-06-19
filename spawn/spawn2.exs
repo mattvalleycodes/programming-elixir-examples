@@ -21,4 +21,7 @@ send pid, { self(), "Donya!" }
 receive do
   { :ok, message } ->
     IO.puts message
+
+  after 500 ->
+      IO.puts "The greeeter has gone away!"
 end
