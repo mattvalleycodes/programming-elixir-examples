@@ -3,6 +3,7 @@ defmodule Spawn2 do
     receive do
       { sender, name } ->
         send sender, { :ok, "Hello, #{name}!" }
+        great()
     end
   end
 end
