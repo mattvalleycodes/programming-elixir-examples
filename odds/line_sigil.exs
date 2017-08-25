@@ -9,11 +9,11 @@ defmodule Example do
   import LineSigil
 
   def lines do
-    ~l{
-      Line one
-      Line two
-      Line three
-      Line four
-    }
+    ~l"""
+    Line one
+    Line two
+    Line three
+    Line four
+    """
   end
 end
